@@ -9,38 +9,42 @@
 <body>
     <h1>Payment Form</h1>
 		<div class="card-details">
-			<p>Pay using Credit or Debit card</p>
-
+			<p>Pay using Credit or Debit card :
+				<select name="card" id="selecting">
+					<option value="Credit"> Credit</option>
+					<option value="Debit">Debit</option>
+				</select>
+			</p>
 			<div class="card-number">
-				<label> Card Number </label>
-				<input type="text"
+				<label> Card Number : *</label>
+				<input type="number"
 					class="card-number-field"
-					placeholder="###-###-###" />
+					placeholder="###-###-###" required/>
 			</div>
 			<br />
 			<div class="date-number">
-				<label> Expiry Date </label>
-				<input type="text"
+				<label> Expiry Date : *</label>
+				<input type="date"
 					class="date-number-field"
-					placeholder="DD-MM-YY" />
+					placeholder="DD-MM-YY" required/>
 			</div>
-
+			<br>
 			<div class="cvv-number">
-				<label> CVV number </label>
-				<input type="text"
+				<label> CVV number : *</label>
+				<input type="number"
 					class="cvv-number-field"
-					placeholder="xxx" />
+					placeholder="xxx" required/>
 			</div>
+			<br>
 			<div class="nameholder-number">
-				<label> Card Holder name </label>
+				<label> Card Holder name : *</label>
 				<input type="text"
 					class="card-name-field"
-					placeholder="Enter your Name" />
+					placeholder="Enter your Name" required/>
 			</div>
-			<button type="submit"
-					class="submit-now-btn">
-				submit
-			</button>
+			<br>
+			<input type="submit" value="submit" class="submit-now-btn">
+			<br>
 		</div>
 	</div>
 </body>
