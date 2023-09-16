@@ -5,15 +5,15 @@
     border-radius: 25px;
     border: 2px solid #73AD21;
     padding: 20px;
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 450px;
     
 }
 .submit-now-btn:hover{
     background-color: blue;
     border-radius: 10px;
 }
-#selecting{
+#selecting,.card-number-field,.date-number-field,.cvv-number-field,.card-name-field{
     font-weight: bold;
     width: 40%;
     padding: 7px 20px;
@@ -22,5 +22,6 @@
     border: 2px solid rgb(16, 14, 14);
     border-radius: 10px;
 }
+
 
 
